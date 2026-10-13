@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de etiquetas HTML</title>
+
+    <style>
+        body {
+            background-color: #eaf4ff;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #222;
+        }
+
+        h1 {
+            color: #145da0;
+        }
+
+        h2 {
+            color: #2471b8;
+        }
+
+        .tarjeta {
+            background-color: white;
+            border: 1px solid #9cc9f5;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .codigo {
+            background-color: #dceeff;
+            border: 1px solid #9cc9f5;
+            padding: 10px;
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+            font-family: monospace;
+        }
+
+        .resultado {
+            background-color: #f7fbff;
+            border: 1px solid #b5d5f5;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        a {
+            color: #145da0;
+        }
+
+        button {
+            background-color: #287bc1;
+            color: white;
+            padding: 7px 12px;
+            border: 1px solid #145da0;
+            cursor: pointer;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #7eaddb;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #c8e2ff;
+        }
+
+        footer {
+            background-color: #d6eaff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Ejemplos de etiquetas HTML</h1>
+
+    <p>En esta página se muestran algunas etiquetas HTML y sus funciones.</p>
+
+    <hr>
+
+    <div class="tarjeta">
+        <h2>1. Etiqueta &lt;html&gt;</h2>
+        <p>Contiene todo el documento HTML.</p>
+        <div class="codigo">&lt;html lang="es"&gt;
+    Contenido de la página
+&lt;/html&gt;</div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>2. Etiqueta &lt;head&gt;</h2>
+        <p>Contiene información de configuración de la página.</p>
+        <div class="codigo">&lt;head&gt;
+    &lt;title&gt;Mi página&lt;/title&gt;
+&lt;/head&gt;</div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>3. Etiqueta &lt;title&gt;</h2>
+        <p>Define el título que aparece en la pestaña del navegador.</p>
+        <div class="codigo">&lt;title&gt;Mi página web&lt;/title&gt;</div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>4. Etiqueta &lt;img&gt;</h2>
+        <p>Sirve para insertar una imagen.</p>
+        <div class="codigo">&lt;img src="foto.jpg" width="200" height="100" alt="Foto"&gt;</div>
+        <div class="resultado">
+            <p>Ejemplo:</p>
+            <img src="imagen%201.jpg"
+                 width="200" height="100" alt="Imagen 1">
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>5. Etiqueta &lt;area&gt;</h2>
+        <p>Permite seleccionar una zona de una imagen.</p>
+        <div class="codigo">&lt;img src="mapa.jpg" usemap="#mapa" alt="Mapa"&gt;
+&lt;map name="mapa"&gt;
+    &lt;area shape="circle" coords="100,100,40"
+    href="cafe.html" alt="Café"&gt;
+&lt;/map&gt;</div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>6. Etiqueta &lt;a&gt;</h2>
+        <p>Sirve para crear enlaces a otras páginas.</p>
+        <div class="codigo">&lt;a href="https://www.w3schools.com/"&gt;
+    Visitar W3Schools
+&lt;/a&gt;</div>
+        <div class="resultado">
+            <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">
+                Visitar W3Schools
+            </a>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>7. Etiqueta &lt;p&gt;</h2>
+        <p>Se utiliza para escribir párrafos.</p>
+        <div class="codigo">&lt;p&gt;Este es un párrafo.&lt;/p&gt;</div>
+        <div class="resultado">
+            <p>Este es un párrafo.</p>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>8. Etiqueta &lt;h1&gt;</h2>
+        <p>Se utiliza para crear el título principal.</p>
+        <div class="codigo">&lt;h1&gt;Mi página web&lt;/h1&gt;</div>
+        <div class="resultado">
+            <h1>Mi página web</h1>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>9. Etiqueta &lt;h2&gt;</h2>
+        <p>Sirve para crear un título secundario.</p>
+        <div class="codigo">&lt;h2&gt;Sección principal&lt;/h2&gt;</div>
+        <div class="resultado">
+            <h2>Sección principal</h2>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>10. Etiqueta &lt;br&gt;</h2>
+        <p>Permite hacer un salto de línea.</p>
+        <div class="codigo">Primera línea&lt;br&gt;Segunda línea</div>
+        <div class="resultado">
+            Primera línea<br>Segunda línea
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>11. Etiqueta &lt;hr&gt;</h2>
+        <p>Sirve para separar contenidos.</p>
+        <div class="codigo">&lt;p&gt;Primer tema&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Segundo tema&lt;/p&gt;</div>
+        <div class="resultado">
+            <p>Primer tema</p>
+            <hr>
+            <p>Segundo tema</p>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>12. Etiqueta &lt;div&gt;</h2>
+        <p>Agrupa elementos en un bloque.</p>
+        <div class="codigo">&lt;div&gt;Contenido de ejemplo&lt;/div&gt;</div>
+        <div class="resultado">
+            <div>Contenido de ejemplo</div>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>13. Etiqueta &lt;span&gt;</h2>
+        <p>Permite cambiar el estilo de una parte del texto.</p>
+        <div class="codigo">&lt;span style="color:blue;"&gt;
+    Texto azul
+&lt;/span&gt;</div>
+        <div class="resultado">
+            <span style="color:blue;">Texto azul</span>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>14. Etiqueta &lt;ul&gt;</h2>
+        <p>Crea una lista con viñetas.</p>
+        <div class="codigo">&lt;ul&gt;
+    &lt;li&gt;Manzana&lt;/li&gt;
+    &lt;li&gt;Pera&lt;/li&gt;
+&lt;/ul&gt;</div>
+        <div class="resultado">
+            <ul>
+                <li>Manzana</li>
+                <li>Pera</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>15. Etiqueta &lt;ol&gt;</h2>
+        <p>Crea una lista numerada.</p>
+        <div class="codigo">&lt;ol&gt;
+    &lt;li&gt;Primero&lt;/li&gt;
+    &lt;li&gt;Segundo&lt;/li&gt;
+&lt;/ol&gt;</div>
+        <div class="resultado">
+            <ol>
+                <li>Primero</li>
+                <li>Segundo</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>16. Etiqueta &lt;li&gt;</h2>
+        <p>Define cada elemento de una lista.</p>
+        <div class="codigo">&lt;li&gt;Comprar alimentos&lt;/li&gt;</div>
+        <div class="resultado">
+            <ul>
+                <li>Comprar alimentos</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>17. Etiqueta &lt;table&gt;</h2>
+        <p>Permite crear una tabla para organizar información.</p>
+        <div class="codigo">&lt;table&gt;
+    &lt;tr&gt;&lt;td&gt;Manzana&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</div>
+        <div class="resultado">
+            <table>
+                <tr><td>Manzana</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>18. Etiqueta &lt;tr&gt;</h2>
+        <p>Define una fila de una tabla.</p>
+        <div class="codigo">&lt;tr&gt;
+    &lt;td&gt;Producto&lt;/td&gt;
+&lt;/tr&gt;</div>
+        <div class="resultado">
+            <table>
+                <tr><td>Producto</td><td>Precio</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>19. Etiqueta &lt;th&gt;</h2>
+        <p>Define una celda de encabezado de una tabla.</p>
+        <div class="codigo">&lt;th&gt;Nombre&lt;/th&gt;</div>
+        <div class="resultado">
+            <table>
+                <tr><th>Nombre</th><th>Edad</th></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>20. Etiqueta &lt;td&gt;</h2>
+        <p>Define una celda con información.</p>
+        <div class="codigo">&lt;td&gt;Manzana&lt;/td&gt;</div>
+        <div class="resultado">
+            <table>
+                <tr><td>Manzana</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>21. Etiqueta &lt;form&gt;</h2>
+        <p>Permite crear formularios para ingresar información.</p>
+        <div class="codigo">&lt;form&gt;
+    Campos del formulario
+&lt;/form&gt;</div>
+        <div class="resultado">
+            <form onsubmit="event.preventDefault(); alert('Formulario enviado');">
+                <label for="nombre">Nombre:</label><br><br>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+                <br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>22. Etiqueta &lt;input&gt;</h2>
+        <p>Permite escribir información en un campo.</p>
+        <div class="codigo">&lt;input type="text" placeholder="Tu nombre"&gt;</div>
+        <div class="resultado">
+            <input type="text" placeholder="Tu nombre">
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>23. Etiqueta &lt;button&gt;</h2>
+        <p>Crea un botón interactivo.</p>
+        <div class="codigo">&lt;button type="button"&gt;Pulsar&lt;/button&gt;</div>
+        <div class="resultado">
+            <button type="button" onclick="alert('Hola')">Pulsar</button>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>24. Etiqueta &lt;video&gt;</h2>
+        <p>Sirve para reproducir videos en una página.</p>
+        <div class="codigo">&lt;video src="video.mp4" controls width="300"&gt;
+&lt;/video&gt;</div>
+        <div class="resultado">
+            <video src="jude.mp4" controls width="300" style="max-width:100%;">
+                Tu navegador no admite videos.
+            </video>
+            <p>Reproduciendo el video cargado.</p>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>25. Etiqueta &lt;audio&gt;</h2>
+        <p>Sirve para reproducir sonidos o música.</p>
+        <div class="codigo">&lt;audio src="audio.mp3" controls&gt;
+&lt;/audio&gt;</div>
+        <div class="resultado">
+            <audio src="vallenato.mp3" controls>
+                Tu navegador no admite audio.
+            </audio>
+            <p>Reproduciendo el audio cargado.</p>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>26. Etiqueta &lt;header&gt;</h2>
+        <p>Representa el encabezado de una página o sección.</p>
+        <div class="codigo">&lt;header&gt;
+    &lt;h1&gt;Mi sitio web&lt;/h1&gt;
+&lt;/header&gt;</div>
+        <div class="resultado">
+            <header>
+                <h2>Mi sitio web</h2>
+            </header>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>27. Etiqueta &lt;footer&gt;</h2>
+        <p>Representa el pie de una página.</p>
+        <div class="codigo">&lt;footer&gt;
+    &lt;p&gt;Mi sitio web&lt;/p&gt;
+&lt;/footer&gt;</div>
+        <div class="resultado">
+            <footer>Mi sitio web - 2026</footer>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <h2>28. Etiqueta &lt;nav&gt;</h2>
+        <p>Agrupa enlaces para navegar por la página.</p>
+        <div class="codigo">&lt;nav&gt;
+    &lt;a href="#inicio"&gt;Inicio&lt;/a&gt;
+&lt;/nav&gt;</div>
+        <div class="resultado">
+            <nav>
+                <a href="#inicio">Inicio</a> |
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </div>
+
+    <footer>
+        <p>Ejemplos de etiquetas HTML - 2026</p>
+    </footer>
+
+</body>
+</html>
+
